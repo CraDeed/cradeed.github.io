@@ -192,7 +192,6 @@ button {
 
 .skills_list {
     margin-top: 5rem;
-    display: inline-block;
     font-size: 2.5rem;
     display: flex;
     justify-content: space-around;
@@ -428,11 +427,13 @@ button {
     font-weight: 900;
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
     .wrapper {
         width: 100%;
     }
+}
 
+@media (max-width: 768px) {
     .about_who {
         display: inline;
         text-align: center;
@@ -451,48 +452,54 @@ button {
         display: block;
     }
 
-    @media (max-width: 480px) {
-        .navbar {
-            font-size: 2.5rem;
-            font-weight: 600;
-            padding: 1.6rem;
-        }
+    .skills_list {
+        flex-wrap: wrap;
+    }
+    .skills_list > div {
+        width: 32%;
+        margin-right: 0 1%;
+    }
 
-        .home {
-            background-size: 170%;
-        }
+    .skills_list > div > div {
+        display: inline-block;
+    }
+}
 
-        .home_introduce {
-            padding: 10rem 5rem;
-            font-size: 2.5rem;
-        }
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding: 1.6rem;
+    }
 
-        .about_introduce {
-            font-size: 1.5rem;
-            text-align: left;
-        }
+    .home {
+        background-size: 170%;
+    }
 
-        .skills_list {
-            margin-top: 5rem;
-            font-size: 2.5rem;
-            width: 100%;
-        }
+    .home_introduce {
+        padding: 10rem 5rem;
+        font-size: 2.5rem;
+    }
 
-        .work__categories {
-            margin: 1rem;
-        }
+    .about_introduce {
+        font-size: 1.5rem;
+        text-align: left;
+    }
 
-        .category__btn {
-            margin: 4px 0;
-            width: 100%;
-        }
+    .work__categories {
+        margin: 1rem;
+    }
 
-        .contact__me {
-            font-size: 1.5rem;
-        }
+    .category__btn {
+        margin: 4px 0;
+        width: 100%;
+    }
 
-        .contact__img {
-            width: 100%;
-        }
+    .contact__me {
+        font-size: 1.5rem;
+    }
+
+    .contact__img {
+        width: 100%;
     }
 }
