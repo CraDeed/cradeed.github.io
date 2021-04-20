@@ -115,6 +115,8 @@ button {
 
 .navbar_menu_item {
     color: gray;
+    cursor: pointer;
+    transition: 0.2s color ease-in-out;
 }
 
 .navbar_menu_item.active {
@@ -122,7 +124,7 @@ button {
 }
 
 .navbar_menu_item:hover {
-    cursor: pointer;
+    color: black;
 }
 
 .about {
@@ -237,18 +239,6 @@ button {
 .node {
     background: url("image/skills/backend.png") no-repeat -31px -29px;
     width: 58px;
-    height: 100px;
-}
-
-.python {
-    background: url("image/skills/backend.png") no-repeat -130px -10px;
-    width: 100px;
-    height: 100px;
-}
-
-.django {
-    background: url("image/skills/backend.png") no-repeat -254px -14px;
-    width: 92px;
     height: 100px;
 }
 
