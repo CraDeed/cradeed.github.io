@@ -1,338 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="cradeed" />
-        <meta name="description" content="크라디드의 포트폴리오 사이트" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <title>Cradeed's Portfolio</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="home">
-                <div class="home_introduce">
-                    <h1>Hi, I am</h1>
-                    <div class="introduce_job">
-                        <ul class="introduce_job_list">
-                            <li>함께 소통하</li>
-                            <li>같이 고민하</li>
-                            <li>즐겁게 개발하</li>
-                            <li>웹을 만드</li>
-                            <li>함께 소통하</li>
-                        </ul>
-                    </div>
-                    <div>는 개발자</div>
-                    <div>안녕하세요 이은기입니다</div>
-                </div>
-            </header>
-            <nav class="navbar">
-                <ul class="navbar_menu">
-                    <li class="navbar_menu_item" data-tab-target="mywork">
-                        Project
-                    </li>
-                    <li class="navbar_menu_item active" data-tab-target="about">
-                        About me
-                    </li>
-                    <li class="navbar_menu_item" data-tab-target="contact">
-                        Contact
-                    </li>
-                </ul>
-            </nav>
-            <main>
-                <div class="about active" data-tab-content>
-                    <div class="about_section">Who?</div>
-                    <div class="about_who">
-                        <img
-                            src="image//me/LeeEunKi.jpg"
-                            alt="profile"
-                            class="about_img"
-                        />
-                        <div class="about_wrap">
-                            <ul class="about_who_ul">
-                                <li class="about_who_list">도전</li>
-                                <li class="about_who_list">성실</li>
-                                <li class="about_who_list">소통</li>
-                            </ul>
-                            <p class="about_age">1994.07.05 낭랑 28세</p>
-                            <p class="about_introduce">
-                                안녕하세요. 프론트엔드 개발자 이은기입니다
-                                <br />
-                                처음 웹개발을 접한 뒤 매력에 푹 빠져 하루하루가
-                                다르게 열심히 알아가는 중입니다. <br />
-                                빠르게 변하는 웹개발 트렌드를 습득하여, 다양한
-                                시도를 해보고 있습니다. <br />
-                                항상 사용자 입장에서 생각하고, 더 나은 방향으로
-                                나아가기위해 고민하고 또 고민합니다. <br />
-                                현재는 프론트엔드 개발자를 넘어 풀스택 개발에도
-                                큰 관심을 가지고 있으며, <br />
-                                차차 하나씩 공부하고 있습니다. 제가 좋아하는 일,
-                                계속해서 잘하고 싶습니다!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about_section">Skills.</div>
-                    <div class="skills">Front-End</div>
-                    <div class="skills_list">
-                        <div>
-                            <div class="html5"></div>
-                            <p>HTML5</p>
-                        </div>
-                        <div>
-                            <div class="css"></div>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <div class="javascript"></div>
-                            <p>
-                                Javascript <br />
-                                (Vanilla)
-                            </p>
-                        </div>
-                        <div>
-                            <div class="es6"></div>
-                            <p>
-                                Javascript <br />
-                                (es6)
-                            </p>
-                        </div>
-                        <div>
-                            <div class="react"></div>
-                            <p>React</p>
-                        </div>
-                        <div>
-                            <div class="redux"></div>
-                            <p>Redux</p>
-                        </div>
-                    </div>
-                    <div class="skills">Back-End</div>
-                    <div class="skills_list">
-                        <div>
-                            <div class="node"></div>
-                            <p>Node.js</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mywork" data-tab-content>
-                    <h1>My Work</h1>
-                    <div class="work__categories">
-                        <button class="category__btn selected" data-filter="*">
-                            All
-                            <span class="category__count">7</span>
-                        </button>
-                        <button class="category__btn" data-filter="js">
-                            HTML/CSS/JS<span class="category__count">2</span>
-                        </button>
-                        <button class="category__btn" data-filter="react">
-                            React<span class="category__count">4</span>
-                        </button>
-                        <button class="category__btn" data-filter="python">
-                            Python<span class="category__count">1</span>
-                        </button>
-                    </div>
-                    <div class="work__projects">
-                        <a
-                            href="#"
-                            class="project"
-                            target="_blank"
-                            data-type="js"
-                        >
-                            <img
-                                src="image/projects/responsive_web.png"
-                                alt="responsive"
-                                class="project__img"
-                            />
-                            <div class="project__description">
-                                <h3>Responsive Web</h3>
-                                <span
-                                    >웹 표준을 따른 반응형 사이트 제작 with
-                                    HTML/CSS/JS
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="#"
-                            class="project"
-                            target="_blank"
-                            data-type="js"
-                        >
-                            <img
-                                src="image/projects/megabox.png"
-                                alt="megabox"
-                                class="project__img"
-                            />
-                            <div class="project__description">
-                                <h3>Megabox</h3>
-                                <span
-                                    >스크립트를 활용한 메가박스 사이트 with
-                                    HTML/CSS/JS
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="https://github.com/CraDeed/bolier-Shopping"
-                            class="project"
-                            target="_blank"
-                            data-type="react"
-                        >
-                            <img
-                                src="image/projects/TravelShop.png"
-                                alt="travelshop"
-                                class="project__img"
-                            />
-                            <div class="project__description">
-                                <h3>Travel Shopping Mall</h3>
-                                <span
-                                    >여행지 쇼핑몰 제작 With React, Node.js
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="https://github.com/CraDeed/GuitarLearn-Django"
-                            class="project"
-                            target="_blank"
-                            data-type="python"
-                        >
-                            <img
-                                src="image/projects/guitarlearn.png"
-                                alt="guitarlearn"
-                                class="project__img"
-                            />
-                            <div class="project__description">
-                                <h3>Guitar Learn</h3>
-                                <span
-                                    >유튜브 기타 레슨 영상을 크롤링하여 레슨
-                                    영상 시청하는 사이트 With Python,Django
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="https://github.com/CraDeed/Django-instagram"
-                            class="project"
-                            target="_blank"
-                            data-type="react"
-                        >
-                            <img
-                                src="image/projects/insta.png"
-                                alt="insta_clone"
-                                class="project__img"
-                            />
-                            <div class="project__description">
-                                <h3>Insta Clone</h3>
-                                <span>인스타 클론코딩 With React,Django </span>
-                            </div>
-                        </a>
-                        <a
-                            href="https://github.com/CraDeed/blog"
-                            class="project"
-                            target="_blank"
-                            data-type="react"
-                        >
-                            <img
-                                src="image/projects/blog.png"
-                                alt="blog"
-                                class="project__img"
-                            />
-                            <div class="project__description">
-                                <h3>Blog</h3>
-                                <span>블로그 사이트 With React </span>
-                            </div>
-                        </a>
-                        <a
-                            href="https://github.com/CraDeed/React-ManagementSystem"
-                            class="project"
-                            target="_blank"
-                            data-type="react"
-                        >
-                            <img
-                                src="image/projects/customermanagement.png"
-                                alt="customermanagement"
-                                class="project__img"
-                            />
-                            <div class="project__description">
-                                <h3>Customer Management</h3>
-                                <span
-                                    >고객 관리 프로그램 With React, Node.js
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact" data-tab-content>
-                    <h1 class="contact__title">Let's Talk</h1>
-                    <div class="contact__me">
-                        <img
-                            src="image/me/contact.jpg"
-                            alt="contact"
-                            class="contact__img"
-                        />
-                        <div class="contact__card">
-                            <a
-                                href="https://github.com/CraDeed"
-                                target="_blank"
-                                class="contact__link"
-                            >
-                                <i class="fab fa-github"></i>
-                                <div class="contact__des">CraDeed's Github</div>
-                            </a>
-                        </div>
-                        <div class="contact__card">
-                            <a
-                                href="https://www.youtube.com/channel/UC0pCBsPGS591jiaxSdoEJyg"
-                                target="_blank"
-                                class="contact__link"
-                            >
-                                <i class="fab fa-youtube"></i>
-                                <div class="contact__des">
-                                    Cradeed's Youtube
-                                </div>
-                            </a>
-                        </div>
-                        <div class="contact__card">
-                            <a
-                                href="https://www.instagram.com/cradeed"
-                                target="_blank"
-                                class="contact__link"
-                            >
-                                <i class="fab fa-instagram"></i>
-                                <div class="contact__des">
-                                    CraDeed's Instagram
-                                </div>
-                            </a>
-                        </div>
-                        <div class="contact__card">
-                            <a
-                                href="https://dldmsrll1075@naver.com"
-                                target="_blank"
-                                class="contact__link"
-                            >
-                                <i class="fas fa-envelope-open-text"></i>
-                                <div class="contact__des">
-                                    dldmsrll1075@naver.com
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <footer class="footer">
-                <div>&copy; 2021 CraDeed</div>
-            </footer>
-            <!-- <button class="arrow_up">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="cradeed" />
+    <meta name="description" content="크라디드의 포트폴리오 사이트" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cradeed's Portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="home">
+        <div class="home_introduce">
+          <h1>Hi, I am</h1>
+          <div class="introduce_job">
+            <ul class="introduce_job_list">
+              <li>함께 소통하</li>
+              <li>같이 고민하</li>
+              <li>즐겁게 개발하</li>
+              <li>웹을 만드</li>
+              <li>함께 소통하</li>
+            </ul>
+          </div>
+          <div>는 개발자</div>
+          <div>안녕하세요 이은기입니다</div>
+        </div>
+      </header>
+      <nav class="navbar">
+        <ul class="navbar_menu">
+          <li class="navbar_menu_item" data-tab-target="mywork">Project</li>
+          <li class="navbar_menu_item active" data-tab-target="about">
+            About me
+          </li>
+          <li class="navbar_menu_item" data-tab-target="contact">Contact</li>
+        </ul>
+      </nav>
+      <main>
+        <div class="about active" data-tab-content>
+          <div class="about_section">Who?</div>
+          <div class="about_who">
+            <img src="image//me/LeeEunKi.jpg" alt="profile" class="about_img" />
+            <div class="about_wrap">
+              <ul class="about_who_ul">
+                <li class="about_who_list">도전</li>
+                <li class="about_who_list">성실</li>
+                <li class="about_who_list">소통</li>
+              </ul>
+              <p class="about_age">1994.07.05 낭랑 28세</p>
+              <p class="about_introduce">
+                안녕하세요. 프론트엔드 개발자 이은기입니다
+                <br />
+                처음 웹개발을 접한 뒤 매력에 푹 빠져 하루하루가 다르게 열심히
+                알아가는 중입니다. <br />
+                빠르게 변하는 웹개발 트렌드를 습득하여, 다양한 시도를 해보고
+                있습니다. <br />
+                항상 사용자 입장에서 생각하고, 더 나은 방향으로 나아가기위해
+                고민하고 또 고민합니다. <br />
+                현재는 프론트엔드 개발자를 넘어 풀스택 개발에도 큰 관심을 가지고
+                있으며, <br />
+                차차 하나씩 공부하고 있습니다. 제가 좋아하는 일, 계속해서 잘하고
+                싶습니다!
+              </p>
+            </div>
+          </div>
+          <div class="about_section">Skills.</div>
+          <div class="skills">Front-End</div>
+          <div class="skills_list">
+            <div>
+              <div class="html5"></div>
+              <p>HTML5</p>
+            </div>
+            <div>
+              <div class="css"></div>
+              <p>CSS</p>
+            </div>
+            <div>
+              <div class="javascript"></div>
+              <p>
+                Javascript <br />
+                (Vanilla)
+              </p>
+            </div>
+            <div>
+              <div class="es6"></div>
+              <p>
+                Javascript <br />
+                (es6)
+              </p>
+            </div>
+            <div>
+              <div class="react"></div>
+              <p>React</p>
+            </div>
+            <div>
+              <div class="redux"></div>
+              <p>Redux</p>
+            </div>
+          </div>
+          <div class="skills">Back-End</div>
+          <div class="skills_list">
+            <div>
+              <div class="node"></div>
+              <p>Node.js</p>
+            </div>
+            <div>
+              <div class="express"></div>
+              <p>Express</p>
+            </div>
+            <div>
+              <div class="python"></div>
+              <p>Python</p>
+            </div>
+          </div>
+        </div>
+        <div class="mywork" data-tab-content>
+          <h1>My Work</h1>
+          <div class="work__categories">
+            <button class="category__btn selected" data-filter="*">
+              All
+              <span class="category__count">7</span>
+            </button>
+            <button class="category__btn" data-filter="js">
+              HTML/CSS/JS<span class="category__count">2</span>
+            </button>
+            <button class="category__btn" data-filter="react">
+              React<span class="category__count">4</span>
+            </button>
+            <button class="category__btn" data-filter="python">
+              Python<span class="category__count">1</span>
+            </button>
+          </div>
+          <div class="work__projects">
+            <a
+              href="https://github.com/CraDeed/guitar-learn"
+              class="project"
+              target="_blank"
+              data-type="react"
+            >
+              <img
+                src="image/projects/new_guitarlearn.png"
+                alt="new_guitarlearn"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>기타런 프로젝트 리뉴얼</h3>
+                <span
+                  >유튜브 기타 강좌 영상 크롤링하고 보여주는 사이트 With MERN,
+                  Python
+                </span>
+              </div>
+            </a>
+            <a href="#" class="project" target="_blank" data-type="js">
+              <img
+                src="image/projects/responsive_web.png"
+                alt="responsive"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Responsive Web</h3>
+                <span>웹 표준을 따른 반응형 사이트 제작 with HTML/CSS/JS </span>
+              </div>
+            </a>
+            <a href="#" class="project" target="_blank" data-type="js">
+              <img
+                src="image/projects/megabox.png"
+                alt="megabox"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Megabox</h3>
+                <span>스크립트를 활용한 메가박스 사이트 with HTML/CSS/JS </span>
+              </div>
+            </a>
+            <a
+              href="https://github.com/CraDeed/bolier-Shopping"
+              class="project"
+              target="_blank"
+              data-type="react"
+            >
+              <img
+                src="image/projects/TravelShop.png"
+                alt="travelshop"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Travel Shopping Mall</h3>
+                <span>여행지 쇼핑몰 제작 With React, Node.js </span>
+              </div>
+            </a>
+            <a
+              href="https://github.com/CraDeed/GuitarLearn-Django"
+              class="project"
+              target="_blank"
+              data-type="python"
+            >
+              <img
+                src="image/projects/guitarlearn.png"
+                alt="guitarlearn"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Guitar Learn</h3>
+                <span
+                  >유튜브 기타 레슨 영상을 크롤링하여 레슨 영상 시청하는 사이트
+                  With Python,Django
+                </span>
+              </div>
+            </a>
+            <a
+              href="https://github.com/CraDeed/Django-instagram"
+              class="project"
+              target="_blank"
+              data-type="react"
+            >
+              <img
+                src="image/projects/insta.png"
+                alt="insta_clone"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Insta Clone</h3>
+                <span>인스타 클론코딩 With React,Django </span>
+              </div>
+            </a>
+            <a
+              href="https://github.com/CraDeed/blog"
+              class="project"
+              target="_blank"
+              data-type="react"
+            >
+              <img
+                src="image/projects/blog.png"
+                alt="blog"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Blog</h3>
+                <span>블로그 사이트 With React </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact" data-tab-content>
+          <h1 class="contact__title">Let's Talk</h1>
+          <div class="contact__me">
+            <img
+              src="image/me/contact.jpg"
+              alt="contact"
+              class="contact__img"
+            />
+            <div class="contact__card">
+              <a
+                href="https://github.com/CraDeed"
+                target="_blank"
+                class="contact__link"
+              >
+                <i class="fab fa-github"></i>
+                <div class="contact__des">CraDeed's Github</div>
+              </a>
+            </div>
+            <div class="contact__card">
+              <a
+                href="https://www.youtube.com/channel/UC0pCBsPGS591jiaxSdoEJyg"
+                target="_blank"
+                class="contact__link"
+              >
+                <i class="fab fa-youtube"></i>
+                <div class="contact__des">Cradeed's Youtube</div>
+              </a>
+            </div>
+            <div class="contact__card">
+              <a
+                href="https://www.instagram.com/cradeed"
+                target="_blank"
+                class="contact__link"
+              >
+                <i class="fab fa-instagram"></i>
+                <div class="contact__des">CraDeed's Instagram</div>
+              </a>
+            </div>
+            <div class="contact__card">
+              <a
+                href="https://dldmsrll1075@naver.com"
+                target="_blank"
+                class="contact__link"
+              >
+                <i class="fas fa-envelope-open-text"></i>
+                <div class="contact__des">dldmsrll1075@naver.com</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div>&copy; 2021 CraDeed</div>
+      </footer>
+      <!-- <button class="arrow_up">
                 <i class="far fa-arrow-alt-circle-up"></i>
             </button> -->
-        </div>
-        <script src="main.js"></script>
-    </body>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
