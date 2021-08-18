@@ -51,6 +51,13 @@
           </div>
           <div>는 개발자</div>
           <div>안녕하세요 이은기입니다</div>
+          <a
+            class="resume"
+            href="https://adorable-clementine-30b.notion.site/32a99a2705d64f6299ac94fccc7e151e"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fas fa-sticky-note"></i> 노션이력서</a
+          >
         </div>
       </header>
       <nav class="navbar">
@@ -105,15 +112,12 @@
               <div class="javascript"></div>
               <p>
                 Javascript <br />
-                (Vanilla)
+                (es6)
               </p>
             </div>
             <div>
-              <div class="es6"></div>
-              <p>
-                Javascript <br />
-                (es6)
-              </p>
+              <div class="typescript"></div>
+              <p>Typescript</p>
             </div>
             <div>
               <div class="react"></div>
@@ -135,6 +139,13 @@
               <p>Express</p>
             </div>
             <div>
+              <div class="mongodb"></div>
+              <p>MongoDB</p>
+            </div>
+          </div>
+          <div class="skills">Data</div>
+          <div class="skills_list">
+            <div>
               <div class="python"></div>
               <p>Python</p>
             </div>
@@ -145,25 +156,43 @@
           <div class="work__categories">
             <button class="category__btn selected" data-filter="*">
               All
-              <span class="category__count">7</span>
-            </button>
-            <button class="category__btn" data-filter="js">
-              HTML/CSS/JS<span class="category__count">2</span>
+              <span class="category__count">3</span>
             </button>
             <button class="category__btn" data-filter="react">
-              React<span class="category__count">4</span>
+              React<span class="category__count">2</span>
             </button>
-            <button class="category__btn" data-filter="python">
-              Python<span class="category__count">1</span>
+            <button class="category__btn" data-filter="js">
+              HTML/CSS/JS<span class="category__count">1</span>
             </button>
           </div>
           <div class="work__projects">
-            <a
-              href="https://github.com/CraDeed/guitar-learn"
-              class="project"
-              target="_blank"
-              data-type="react"
-            >
+            <div class="project" data-type="js">
+              <img
+                src="image/projects/portfolio.png"
+                alt="megabox"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Portfolio</h3>
+                <span>포트롤리오 용도로 제작한 웹사이트</span>
+                <div>
+                  <a
+                    href="https://github.com/CraDeed/cradeed.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Github</a
+                  >
+                  <a
+                    href="https://adorable-clementine-30b.notion.site/Cradeed-s-Homepage-4a6eae7fba0045529f284763d207978e"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >description</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project" data-type="react">
               <img
                 src="image/projects/new_guitarlearn.png"
                 alt="new_guitarlearn"
@@ -175,36 +204,24 @@
                   >유튜브 기타 강좌 영상 크롤링하고 보여주는 사이트 With MERN,
                   Python
                 </span>
+                <div>
+                  <a
+                    href="https://guitar-learn.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Website</a
+                  >
+                  <a
+                    href="https://adorable-clementine-30b.notion.site/Guitar-Learn-Project-d1776e5ab90046a994062175634ed2f0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >description</a
+                  >
+                </div>
               </div>
-            </a>
-            <a href="#" class="project" target="_blank" data-type="js">
-              <img
-                src="image/projects/responsive_web.png"
-                alt="responsive"
-                class="project__img"
-              />
-              <div class="project__description">
-                <h3>Responsive Web</h3>
-                <span>웹 표준을 따른 반응형 사이트 제작 with HTML/CSS/JS </span>
-              </div>
-            </a>
-            <a href="#" class="project" target="_blank" data-type="js">
-              <img
-                src="image/projects/megabox.png"
-                alt="megabox"
-                class="project__img"
-              />
-              <div class="project__description">
-                <h3>Megabox</h3>
-                <span>스크립트를 활용한 메가박스 사이트 with HTML/CSS/JS </span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/CraDeed/bolier-Shopping"
-              class="project"
-              target="_blank"
-              data-type="react"
-            >
+            </div>
+
+            <div class="project" data-type="react">
               <img
                 src="image/projects/TravelShop.png"
                 alt="travelshop"
@@ -212,60 +229,17 @@
               />
               <div class="project__description">
                 <h3>Travel Shopping Mall</h3>
-                <span>여행지 쇼핑몰 제작 With React, Node.js </span>
+                <span>여행지 쇼핑몰 제작 With MERN </span>
+                <div>
+                  <a
+                    href="https://github.com/CraDeed/bolier-Shopping"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Github</a
+                  >
+                </div>
               </div>
-            </a>
-            <a
-              href="https://github.com/CraDeed/GuitarLearn-Django"
-              class="project"
-              target="_blank"
-              data-type="python"
-            >
-              <img
-                src="image/projects/guitarlearn.png"
-                alt="guitarlearn"
-                class="project__img"
-              />
-              <div class="project__description">
-                <h3>Guitar Learn</h3>
-                <span
-                  >유튜브 기타 레슨 영상을 크롤링하여 레슨 영상 시청하는 사이트
-                  With Python,Django
-                </span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/CraDeed/Django-instagram"
-              class="project"
-              target="_blank"
-              data-type="react"
-            >
-              <img
-                src="image/projects/insta.png"
-                alt="insta_clone"
-                class="project__img"
-              />
-              <div class="project__description">
-                <h3>Insta Clone</h3>
-                <span>인스타 클론코딩 With React,Django </span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/CraDeed/blog"
-              class="project"
-              target="_blank"
-              data-type="react"
-            >
-              <img
-                src="image/projects/blog.png"
-                alt="blog"
-                class="project__img"
-              />
-              <div class="project__description">
-                <h3>Blog</h3>
-                <span>블로그 사이트 With React </span>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
         <div class="contact" data-tab-content>
@@ -322,9 +296,6 @@
       <footer class="footer">
         <div>&copy; 2021 CraDeed</div>
       </footer>
-      <!-- <button class="arrow_up">
-                <i class="far fa-arrow-alt-circle-up"></i>
-            </button> -->
     </div>
     <script src="main.js"></script>
   </body>

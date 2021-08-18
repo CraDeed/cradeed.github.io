@@ -34,6 +34,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 button {
@@ -53,13 +54,14 @@ button {
 }
 
 .home {
+  position: relative;
   background-size: cover;
   background-image: linear-gradient(
       -45deg,
       rgba(246, 255, 0, 0.8),
       rgba(255, 0, 161, 0.8)
     ),
-    url('image/me/header.jpg');
+    url('image/me/header2.jpg');
 
   /* background-image: url(image/home_backgroud.jpg); */
 }
@@ -71,8 +73,18 @@ button {
   text-align: center;
 }
 
+.home_introduce a {
+  text-decoration: underline;
+}
+
 .home_introduce > div:nth-of-type(2) {
   display: inline-block;
+}
+
+.resume {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
 }
 
 .introduce_job {
@@ -191,38 +203,38 @@ button {
 }
 
 .html5 {
-  width: 72px;
+  width: 100px;
   height: 100px;
-  background: url('image/skills/frontend.png') no-repeat -19px -2px;
+  background: url('image/skills/frontend.png') no-repeat -10px -10px;
 }
 
 .css {
-  background: url('image/skills/frontend.png') no-repeat -129px -5px;
-  width: 72px;
+  background: url('image/skills/frontend.png') no-repeat -130px -10px;
+  width: 100px;
   height: 100px;
 }
 
 .javascript {
-  background: url('image/skills/frontend.png') no-repeat -237px -17px;
-  width: 76px;
+  background: url('image/skills/frontend.png') no-repeat -250px -10px;
+  width: 100px;
   height: 100px;
 }
 
-.es6 {
-  background: url('image/skills/frontend.png') no-repeat -335px -5px;
+.typescript {
+  background: url('image/skills/frontend.png') no-repeat -370px -10px;
   width: 100px;
   height: 100px;
 }
 
 .react {
-  background: url('image/skills/frontend.png') no-repeat -445px -5px;
+  background: url('image/skills/frontend.png') no-repeat -490px -10px;
   width: 100px;
   height: 100px;
 }
 
 .redux {
-  background: url('image/skills/frontend.png') no-repeat -561px -13px;
-  width: 88px;
+  background: url('image/skills/frontend.png') no-repeat -610px -10px;
+  width: 100px;
   height: 100px;
 }
 
@@ -238,8 +250,14 @@ button {
   height: 100px;
 }
 
-.python {
+.mongodb {
   background: url('image/skills/backend.png') no-repeat -250px -10px;
+  width: 100px;
+  height: 100px;
+}
+
+.python {
+  background: url('image/skills/backend.png') no-repeat -370px -10px;
   width: 100px;
   height: 100px;
 }
@@ -312,11 +330,12 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 400px;
+  width: 480px;
+  height: 270px;
   margin: 15px 25px;
   background: #eeeeee;
   color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .project.invisible {
@@ -351,6 +370,19 @@ button {
 
 .project__description h3 {
   color: orange;
+}
+
+.project__description span {
+  margin-bottom: 1rem;
+}
+
+.project__description div {
+  display: block;
+}
+
+.project__description a {
+  display: inline-block;
+  text-decoration: underline;
 }
 
 .contact {
@@ -400,7 +432,7 @@ button {
 .footer {
   display: block;
   color: white;
-  font-size: 4rem;
+  font-size: 1.5rem;
   padding: 2rem;
   text-align: center;
   background-color: violet;
