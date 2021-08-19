@@ -511,6 +511,10 @@ button {
   .skills_list > div > div {
     display: inline-block;
   }
+
+  .project__description {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -549,5 +553,9 @@ button {
 
   .contact__img {
     width: 100%;
+  }
+
+  .project__description {
+    font-size: 1.5rem;
   }
 }
