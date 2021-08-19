@@ -52,3 +52,14 @@ workBtnContainer.addEventListener('click', (e) => {
     projectContainer.classList.remove('anim_out');
   }, 300);
 });
+
+// 반응형
+
+const myWorkDes = document.querySelector('.mywork_des');
+
+// 모바일 체크
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (isMobile) {
+  myWorkDes.innerText = '자세한 사항은 클릭해보세요!';
+}
